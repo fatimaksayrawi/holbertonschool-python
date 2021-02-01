@@ -1,4 +1,3 @@
-  
 #!/usr/bin/python3
 """This module does one class that has one private attribute."""
 
