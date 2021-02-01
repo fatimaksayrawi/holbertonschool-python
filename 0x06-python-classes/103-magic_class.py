@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""fatima"""
+"""This module does one class that has one private integer attribute with 2 exc
+eptions."""
 
 
 import math
@@ -7,7 +8,7 @@ import math
 
 
 class MagicClass:
-    """fatima"""
+    """This class has private size attribute with exceptions."""
     def __init__(self, radius=0):
         self.__radius = 0
         if type(radius) is not int and type(radius) is not float:
