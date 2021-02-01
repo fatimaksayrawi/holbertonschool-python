@@ -1,22 +1,22 @@
 #!/usr/bin/python3
-"""This module does one class that has one private integer attribute with 2 exc
-eptions."""
-
-
+"""Magic class"""
 import math
 
 
+class MagicClass():
+    """Magic class"""
 
-class MagicClass:
-    """This class has private size attribute with exceptions."""
     def __init__(self, radius=0):
+        """Initialization class"""
         self.__radius = 0
-        if type(radius) is not int and type(radius) is not float:
+        if not isinstance(radius, int) and not isinstance(radius, float):
             raise TypeError('radius must be a number')
         self.__radius = radius
 
     def area(self):
-        return (self.__radius ** 2) * math.pi
+        """Return the area of the class"""
+        return self.__radius ** 2 * math.pi
 
     def circumference(self):
-        return (2 * math.pi) * self.__radius
+        """Return the circumference"""
+        return 2 * math.pi * self.__radius
