@@ -35,3 +35,4 @@ integers/floats")
             raise TypeError("Each row of the matrix must have the same size")
         cont += 1
     return new_mtx
+
