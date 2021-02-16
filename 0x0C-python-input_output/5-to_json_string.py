@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-""" convert to json object"""
-
-
-import json
+""" json """
 
 
 def to_json_string(my_obj):
-    """ returns the JSON representation of an object
     """
+    json
+    """
+    import json
     return json.dumps(my_obj)
