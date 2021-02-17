@@ -1,7 +1,15 @@
 #!/usr/bin/python3
-"""Function that returns a dictionary description"""
+
+"""
+class_to_json Module
+"""
 
 
 def class_to_json(obj):
-    """from class to dict representation"""
-    return obj.__dict__
+    """returns a dictionary description with data structures like
+    (list, dictionary, string, integer and boolean) for JSON serialization
+    of an object"""
+    if hasattr(obj, "__dict__"):
+        return obj.__dict__
+    if hasattr(obj, "__slots__"):
+        return obj.__slots__
