@@ -64,3 +64,4 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         print_stats(stats, file_size)
         raise
+>>>>>>> bf9c53e24777c19bf9f0689a7ec9f169dcef6d3f
