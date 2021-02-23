@@ -1,0 +1,1 @@
+In this directory  "0x05-python=exceptions", we are going to learn about exceptions.

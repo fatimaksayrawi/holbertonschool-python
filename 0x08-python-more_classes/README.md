@@ -1,0 +1,1 @@
+In this project , we are going tp get familiar with the concepts of "OOP" using python.
