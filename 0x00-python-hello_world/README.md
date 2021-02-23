@@ -1,1 +1,0 @@
-In this directory "0x00-python-hello_world", we create several files that helped us to learn the basics of PYTHON language.
