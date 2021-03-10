@@ -1,5 +1,5 @@
--- creates a stored procedure ComputeOverallScoreForUser
----7-overall_score.sql
+-- Create a stored procedure ComputeOverallScoreForUser
+-- This procedure will compute and store the students' score
 DELIMITER |
 CREATE PROCEDURE ComputeOverallScoreForUser (
     IN user_id int
