@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-""" web.py """
+""" Advanced - Module for Implementing an expiring
+    web cache and tracker
+"""
 
 import redis
 import requests
@@ -10,11 +12,13 @@ rd = redis.Redis()
 
 
 def count_requests(method: Callable) -> Callable:
-    """ Checking number of requests has been made """
+    """ Counting with decorators how many times a request
+        has been made
+    """
 
     @wraps(method)
     def wrapper(url):
-        """ Wrapper function """
+        """ Wrapper for decorator functionality """
         rd.incr(f"count:{url}")
         cached_html = rd.get(f"cached:{url}")
         if cached_html:
@@ -29,6 +33,8 @@ def count_requests(method: Callable) -> Callable:
 
 @count_requests
 def get_page(url: str) -> str:
-    """ Return html content """
+    """ requests module to obtain the HTML
+        content of a particular URL and returns it.
+    """
     req = requests.get(url)
     return req.text
